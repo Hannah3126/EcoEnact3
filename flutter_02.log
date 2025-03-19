@@ -1,0 +1,101 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+FileSystemException: FileSystemException: writeFrom failed, path = '/Users/hannahjoshua/.dart-tool/dart-flutter-telemetry.log' (OS Error: No space left on device, errno = 28)
+
+```
+#0      _RandomAccessFile.writeFromSync (dart:io/file_impl.dart:905:7)
+#1      _File.writeAsBytesSync (dart:io/file_impl.dart:646:14)
+#2      _File.writeAsStringSync (dart:io/file_impl.dart:668:5)
+#3      ForwardingFile.writeAsStringSync (package:file/src/forwarding/forwarding_file.dart:150:16)
+#4      LogHandler.save (package:unified_analytics/src/log_handler.dart:296:15)
+#5      AnalyticsImpl.send (package:unified_analytics/src/analytics.dart:622:17)
+#6      FlutterCommand._sendPostUsage (package:flutter_tools/src/runner/flutter_command.dart:1642:15)
+#7      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1399:13)
+<asynchronous suspension>
+#8      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#9      CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+<asynchronous suspension>
+#10     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:372:9)
+<asynchronous suspension>
+#11     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#12     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:308:5)
+<asynchronous suspension>
+#13     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:130:9)
+<asynchronous suspension>
+#14     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#15     main (package:flutter_tools/executable.dart:93:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[33m[!][39m Flutter (Channel stable, 3.22.2, on macOS 14.5 23F79 darwin-arm64, locale en-MY)
+    [32m•[39m Flutter version 3.22.2 on channel stable at /Users/hannahjoshua/development/flutter
+    [33m![39m Warning: `flutter` on your path resolves to
+      /Users/hannahjoshua/Development/flutter/bin/flutter, which is not inside your current Flutter
+      SDK checkout at /Users/hannahjoshua/development/flutter. Consider adding
+      /Users/hannahjoshua/development/flutter/bin to the front of your path.
+    [33m![39m Warning: `dart` on your path resolves to /Users/hannahjoshua/Development/flutter/bin/dart,
+      which is not inside your current Flutter SDK checkout at
+      /Users/hannahjoshua/development/flutter. Consider adding
+      /Users/hannahjoshua/development/flutter/bin to the front of your path.
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 761747bfc5 (8 weeks ago), 2024-06-05 22:15:13 +0200
+    [32m•[39m Engine revision edd8546116
+    [32m•[39m Dart version 3.4.3
+    [32m•[39m DevTools version 2.34.3
+    [32m•[39m If those were intentional, you can disregard the above warnings; however it is recommended to
+      use "git" directly to perform update checks and upgrades.
+
+[33m[!][39m Android toolchain - develop for Android devices (Android SDK version 34.0.0)
+    [32m•[39m Android SDK at /Users/hannahjoshua/Library/Android/sdk
+    [32m•[39m Platform android-34, build-tools 34.0.0
+    [32m•[39m Java binary at: /Library/Java/JavaVirtualMachines/microsoft-11.jdk/Contents/Home/bin/java
+    [32m•[39m Java version OpenJDK Runtime Environment Microsoft-40648 (build 11.0.16.1+1-LTS)
+    [31m✗[39m Android license status unknown.
+      Run `flutter doctor --android-licenses` to accept the SDK licenses.
+      See https://flutter.dev/docs/get-started/install/macos#android-setup for more details.
+
+[33m[!][39m Xcode - develop for iOS and macOS (Xcode 15.4)
+    [32m•[39m Xcode at /Applications/Xcode.app/Contents/Developer
+    [32m•[39m Build 15F31d
+    [31m✗[39m Unable to get list of installed Simulator runtimes.
+    [32m•[39m CocoaPods version 1.15.2
+
+[32m[✓][39m Chrome - develop for the web
+    [32m•[39m Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[33m[!][39m Android Studio (not installed)
+    [32m•[39m Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/docs/get-started/install/macos#android-setup for detailed
+      instructions).
+
+[32m[✓][39m VS Code (version 1.74.3)
+    [32m•[39m VS Code at /Users/hannahjoshua/Downloads/Visual Studio Code 2.app/Contents
+    [32m•[39m Flutter extension version 3.60.0
+
+[32m[✓][39m Connected device (4 available)
+    [32m•[39m SM S906E (mobile)               • RFCT31P0D4N           • android-arm64  • Android 14 (API 34)
+    [32m•[39m macOS (desktop)                 • macos                 • darwin-arm64   • macOS 14.5 23F79
+      darwin-arm64
+    [32m•[39m Mac Designed for iPad (desktop) • mac-designed-for-ipad • darwin         • macOS 14.5 23F79
+      darwin-arm64
+    [32m•[39m Chrome (web)                    • chrome                • web-javascript • Google Chrome
+      127.0.6533.72
+
+[32m[✓][39m Network resources
+    [32m•[39m All expected network resources are available.
+
+[33m![39m Doctor found issues in 4 categories.
+```
