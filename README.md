@@ -1,16 +1,33 @@
-# fyp
+# 🌱 EcoEnact - AI-Powered Carbon Footprint Calculator
 
-A new Flutter project.
+🚀 *AI-driven mobile application for estimating carbon footprints from food consumption and waste using image recognition.*
 
-## Getting Started
+## 📖 Project Overview
+EcoEnact is an **AI-powered sustainability tool** that estimates **carbon footprints** by analyzing food consumption and waste using **computer vision**. The app helps users make eco-friendly choices by providing **real-time insights** into their environmental impact.
 
-This project is a starting point for a Flutter application.
+### ✨ Key Goals:
+- Reduce **food waste** by educating users on their carbon footprint.
+- Use **AI-based image recognition** to classify food and waste.
+- Encourage **sustainable decision-making** through actionable recommendations.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🌟 Features
+✔ **AI-powered Image Recognition** – Detects and classifies food items.  
+✔ **Carbon Footprint Estimation** – Provides real-time insights.  
+✔ **Waste Classification Module** – Enhances recycling efforts.  
+✔ **Gamified Sustainability Tracking** – Encourages eco-friendly habits.  
+✔ **User Dashboard & Insights** – Visual analytics for tracking footprint reduction.  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## ⚙️ Tech Stack
+
+| Component        | Technology Used |
+|-----------------|----------------|
+| **Frontend**    | Flutter (Dart)  |
+| **Backend**     | Python (FastAPI, Flask) |
+| **AI/ML Models** | TensorFlow, OpenCV, Scikit-learn |
+| **Database**    | MySQL |
+
+---
